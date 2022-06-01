@@ -1,0 +1,562 @@
+
+@font-face{
+    font-family: 'Avenir';
+    src: url(../fonts/AvenirNext-Bold.woff) format('woff');
+    src: url(../fonts/AvenirNext-Medium.woff) format('woff');
+    font-weight: normal;
+}
+/*---------------------------------------------*/
+
+
+/*----------------------٢-----------------------*/
+/*                  DEFAULTS                    */
+/*                                              */
+
+body{
+    background: white;
+    font-family: 'Avenir';
+}
+
+/*----------------------------------------------*/
+
+
+
+/*----------------------٣-----------------------*/
+/*               HELPER CLASSES                 */
+/*                                              */
+
+.button{
+    background-color: #3040C4;
+    border-radius: 41px;
+    color: #FFFFFF;
+    width: 190px;
+    height: 56px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/*----------------------------------------------*/
+
+
+/*----------------------٤-----------------------*/
+/*                    LAYOUT                    */
+/*                البناء العام للصفحة           */
+/*----------------------------------------------*/
+
+
+
+/*----------------------٥-----------------------*/
+/*                    HEADER                    */
+/*----------------------------------------------*/
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEF0FC;
+    margin-top: 40px;
+    margin: auto;
+    width: 80%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.burger{
+    display: none;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+}
+ header ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+ header li{
+    margin-right: 38px;
+}
+header ul li a {
+    color: black;
+}
+
+/*----------------------٦-----------------------*/
+/*                     HERO                     */
+/*----------------------------------------------*/
+header{
+    margin-top: 40px;
+}
+.hero .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero{
+    margin-bottom: 140px;
+}
+.hero__desc{
+    display: flex;
+    flex-direction: column;
+}
+.hero__desc h1{
+    font-size: 48px;
+    width: 368px;
+    height: 89px;
+    line-height: 66px;
+    margin-top: 146px;
+}
+.hero__desc p{
+    width: 368px;
+    height: 89px;
+    font-size: 18px;
+    color: #000000;
+    line-height: 30px;
+    margin-bottom: 29px;
+    margin-top: 50px;
+}
+.hero__image{
+    width: 722px;
+    height: 442px;
+}
+/*----------------------٧-----------------------*/
+/*              MEET YOUR MATCH                 */
+/*----------------------------------------------*/
+.meetYourMatch .container{
+    width: 80%;
+    margin: auto;
+}
+.meetYourMatch__background{
+    display: flex;
+    align-items: center;
+    height: 512px;
+    background-color: #EEF0FC;
+    border-radius: 18px;
+    margin-bottom: -472px;
+}
+.meetYourMatchــcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.meetYourMatchــcontent h2{
+    text-transform: capitalize;
+    font-size: 36px;
+}
+.switcher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form span{
+    margin: 0 16px;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #9FA2B8;
+}
+#dog,#cat {
+    display: none;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.form-group input[type="text"] {
+    width: 501px;
+    height: 64px;
+    border-radius: 41px;
+    border: 1px solid #3040C4;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 45px;
+    outline: none;
+}
+.meetYourMatch form .is-primary {
+    width: 185px;
+    height: 64px;
+    margin-left: -183px;
+}
+.widgets {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.is-searchResults .widget{
+    margin-right: 56px;
+    margin-bottom: 22px;
+}
+.is-searchResults .widget__desc{
+    background-color: #FFFFFF;
+    box-shadow: 0px 76px 172px rgb(165 131 228 / 30%);
+    padding: 32px 0 16px 14px;
+}
+.is-searchResults .widget__desc h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.is-searchResults .widget__desc p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 6px;
+}
+.is-searchResults .widget__image{
+    margin-bottom: -28px;
+}
+/*----------------------٨-----------------------*/
+/*               HOW IT WORKS                   */
+/*----------------------------------------------*/
+.howItWorks{
+    margin-top: 144px;
+    margin-bottom: 200px;
+}
+.howItWorks .container{
+    width: 80%;
+    margin: auto;
+}
+.howItWorks h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 71px;
+}
+.is-howItWorks .widget{
+    width: 20%;
+    margin: auto;
+}
+.is-howItWorks .widget__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.is-howItWorks .widget__desc {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.is-howItWorks .widget__desc h3{
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.is-howItWorks .widget__desc p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #6A6C79;
+    margin-right: 27px;
+    text-align: center;
+}
+/*----------------------٩-----------------------*/
+/*                 STORIES                      */
+/*----------------------------------------------*/
+.stories .container{
+    width: 100%;
+    background-color: #F6F6F9;
+    padding-bottom: 138px;
+}
+.stories .container h2{
+    font-size: 36px;
+    color: #2B292D;
+    text-align: center;
+    padding: 95px 0 0 0 ;
+    text-transform: capitalize;
+}
+.stories .heading-paragraph{
+    font-size: 18px;
+    color: #5F5F80;
+    text-align: center;
+    width: 574px;
+    word-wrap: break-word;
+    margin: 18px auto;
+    color: #5F5F80;
+}
+.stories .container .widgets{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stories .container .widget{
+    margin-right: 16px;
+}
+.stories .container .widget__desc h3{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+.stories .container .widget__desc .link{
+    color: #2329DB;
+    font-size: 14px;
+}
+/*----------------------١٠----------------------*/
+/*       Actions: Change A Life, Adopt A Pet    */
+/*----------------------------------------------*/
+.actions .container{
+    width: 100%;
+    height: 373px;
+    background: #3040C4;
+    margin: auto;
+    text-align: center;
+}
+.actions .container h2{
+    padding-top: 116px;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+.actions .container a {
+    display: inline-block;
+    margin-right: 18px;
+    text-align: center;
+}
+.is-secondary{
+    background-color: #FFFFFF;
+    color: #3040C4;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 56px;
+    text-align: center;
+}
+.is-outline{
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+}
+/*---------------------١١-----------------------*/
+/*                    FOOTER                    */
+/*----------------------------------------------*/
+footer .container {
+    background-color: #FFFFFF;
+    width: 80%;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.copyrights{
+    margin-right: 100px;
+}   
+.footer-nav{
+    display: flex;
+}
+.item ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: justify;
+    width: 170px;
+}
+.item ul li  {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+.item h5{
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+footer a {
+    color: #000000;
+    font-size: 14px;
+}
+/*----------------------١٢----------------------*/
+/*                    Responsive                */
+/*       كل ما هو متعلق بالهواتف والتابلت       */
+/*----------------------------------------------*/
+
+
+@media (max-width:1200px){
+    .is-searchResults .widget{
+        margin-right: 100px;
+    }
+}
+
+@media  (max-width:991px) {
+    .hero__desc h1 {
+        font-size: 47px;
+        width: 368px;
+        height: 89px;
+        line-height: 49px;
+        margin-top: 146px;
+        margin-right: 87px;
+    }
+    .hero__desc p {
+        width: 368px;
+        height: 89px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        margin-bottom: 10px;
+        margin-top: 12px;
+    }
+    .hero__image img{
+        width: 100%;
+    }
+    /*Meet Your Match*/
+    .widgets.is-searchResults {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: -55px;
+        align-items: center;
+    }
+    .is-searchResults .widget {
+        margin-right: 56px;
+        margin-bottom: 29px;
+    }
+    .meetYourMatch form .is-primary {
+        width: 142px;
+        height: 64px;
+        margin-left: -70px;
+    }
+    /*How It Work*/
+    .widgets.is-howItWorks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .is-howItWorks .widget{
+        width: 60%;
+    }
+    .is-howItWorks .widget__desc p {
+        font-size: 16px;
+        line-height: 22px;
+        color: #6A6C79;
+        margin-right: 27px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    /*Featurd*/
+    .stories .container .widgets{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .stories .container .widget{
+        margin-bottom: 40px;
+    }
+    .stories .heading-paragraph{
+        width: 100%;
+    }
+    .form-group input[type="text"]{
+        width: 100%;
+    }
+    /*footer*/
+    footer .container {
+        margin: 87px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-nav h5 {
+        text-align: unset;
+    }
+    .item ul {
+        width: 153px;
+    }
+    .copyrights{
+        margin-bottom: 60px;
+    }
+}
+@media (min-width: 200px) and (max-width: 600px) {
+    header .main-nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+        padding: 0;
+        border: none;
+    }
+    .burger div {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #2B292D;
+        margin: 5px 0;
+    }
+    .hero .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero__desc h1 {
+        font-size: 34px;
+        width: 250px;
+        height: 89px;
+        line-height: 40px;
+        margin-top: 146px;
+        margin-right: 87px;
+    }.hero__desc p {
+        width: 250px;
+        height: 89px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 22px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .widgets.is-searchResults{
+        margin-right: unset;
+    }
+    .stories .container .widget__image img {
+        width: 239px;
+    }
+    .is-searchResults .widget {
+        margin-right: unset;
+        margin-bottom: 29px;
+    }
+    .actions .container h2{
+        font-size: 24px;
+    }
+    .actions .container a {
+        margin-bottom: 14px;
+    }
+    .copyrights{
+        margin-right: unset;
+    }
+    .stories .container .widget{
+        margin-right: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .container{
+        margin: 45px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    footer .footer-nav{
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .item ul{
+        width: 112px;
+    }   
+    .item h5{
+        text-align: unset;
+    }
+}

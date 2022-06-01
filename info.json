@@ -1,0 +1,10 @@
+[
+ {
+     "name" : "Alex",
+     "type" : "Cat",
+     "age" :3,
+     "Gender" : "Male",
+     "location" : "UAE",
+     "sotry" : "It was very sick"
+ }
+]
